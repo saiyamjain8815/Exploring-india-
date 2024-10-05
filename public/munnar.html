@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munnar, Kerala</title>
+    <link rel="icon" href="images/munnar_hotel1.jpg" type="image/x-icon" />
+    <!-- Inline CSS Styling and Animations -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: skyblue;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        animation: zoomIn 1.5s ease-in-out; /* Animation on page load */
+      }
+
+      /* Animation Definitions */
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          transform: translateY(30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* General Heading and Paragraph styles */
+      h1, h2, h3 {
+        color: #003366;
+        font-family: 'Georgia', serif;
+      }
+
+      p, li {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* About Section */
+      .about {
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 8px;
+        margin: 2rem auto;
+        max-width: 1200px;
+        animation: fadeInUp 1s ease-in-out; /* Fade-in effect on load */
+      }
+
+      .about h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Times New Roman', serif;
+      }
+
+      .about ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .about li {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      /* Hotels Section */
+      .hotels {
+        padding: 2rem;
+        background-color: #e6f9ff;
+        margin: 0 auto;
+        border-radius: 8px;
+        max-width: 1200px;
+        animation: fadeIn 1s ease-in-out 0.5s; /* Delayed fade-in effect */
+      }
+
+      .grid-3-cols {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+
+      .hotel {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .hotel:hover {
+        transform: scale(1.05); /* Zoom-in on hover */
+      }
+
+      .hotel img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .hotel img:hover {
+        transform: scale(1.1); /* Zoom-in on image hover */
+      }
+
+      .hotel-box {
+        padding: 1rem;
+      }
+
+      .hotel h3 {
+        font-size: 1.5rem;
+        color: #006699;
+        margin-bottom: 0.5rem;
+        font-family: 'Verdana', sans-serif;
+      }
+
+      .hotel p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      .btn--small {
+        background-color: #ff7043;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
+      }
+
+      /* Video Gallery */
+      .video-gal {
+        background-color: #f0f8ff;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 8px;
+        animation: fadeIn 1.2s ease-in-out; /* Fade-in for the section */
+      }
+
+      .vid-container {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .video {
+        width: 30%;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .video video {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .video:hover video {
+        transform: scale(1.1); /* Zoom-in on video hover */
+      }
+
+      .video-caption {
+        padding: 0.5rem;
+        background-color: #e6f9ff;
+        font-weight: bold;
+        text-align: center;
+        color: #003366;
+        font-family: 'Verdana', sans-serif;
+      }
+
+      .heading {
+        font-size: 2rem;
+        color: #003366;
+        margin-bottom: 1rem;
+      }
+
+      .footer-content {
+        background-color: #003366;
+        color: white;
+        padding: 1.5rem 0;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out; /* Slow fade-in for footer */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Munnar Section -->
+    <section class="about">
+      <h1>Munnar, Kerala</h1>
+      <p class="About">
+        <h4>"God's Own Country"</h4>
+        Munnar is a town in the Western Ghats mountain range in India’s Kerala state. A hill station and former resort for the British Raj elite, it's surrounded by rolling hills dotted with tea plantations established in the late 19th century. Eravikulam National Park, a habitat for the endangered mountain goat Nilgiri tahr, is home to the Lakkam Waterfalls, hiking trails and 2,695m-tall Anamudi Peak.
+        <br /><br />
+        <strong>Highlights:</strong>
+        <ul>
+          <li>Tea Plantations: Explore the extensive tea gardens of Munnar.</li>
+          <li>Eravikulam National Park: Home to the endangered Nilgiri Tahr.</li>
+          <li>Neelakurinji Bloom: A rare phenomenon occurring once in 12 years.</li>
+          <li>Mattupetty Dam: Enjoy a scenic boat ride.</li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="hotels">
+      <h2 class="heading">Top Rated Hotels</h2>
+      <div class="grid-3-cols">
+        <div>
+          <figure class="hotel container">
+            <img src="images/munnar_hotel1.jpg" alt="Windermere Estate" />
+            <div class="hotel-box">
+              <h3>Windermere Estate</h3>
+              <p>
+                📍 2km from Tea Museum<br />
+                <span>Beautiful Location</span><br />
+                <span>Deluxe Room</span><br />
+                <span>1 Night, 1 Adult</span>
+              </p>
+              <a href="https://www.booking.com/" class="btn--small">Reserve</a>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="hotel">
+            <img src="images/munnar_hotel2.jpg" alt="Tea County Resort" />
+            <div class="hotel-box">
+              <h3>Tea County Resort</h3>
+              <p>
+                📍 1.5km from Munnar Town<br />
+                <span>Excellent View</span><br />
+                <span>Superior Double Room</span><br />
+                <span>1 Night, 1 Adult</span>
+              </p>
+              <a href="https://www.booking.com/" class="btn--small">Reserve</a>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure class="hotel">
+            <img src="images/munnar_hotel3.jpg" alt="Fragrant Nature Resort" />
+            <div class="hotel-box">
+              <h3>Fragrant Nature Resort</h3>
+              <p>
+                📍 Near Attukad Waterfalls<br />
+                <span>Peaceful Stay</span><br />
+                <span>Luxury Suite</span><br />
+                <span>1 Night, 1 Adult</span>
+              </p>
+              <a href="https://www.booking.com/" class="btn--small">Reserve</a>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section class="video-gal">
+      <h3 class="heading">Video Gallery</h3>
+      <div class="vid-container">
+        <div class="video">
+          <video src="videos/munnar1.mp4" controls></video>
+          <div class="video-caption">Munnar Tea Gardens</div>
+        </div>
+        <div class="video">
+          <video src="videos/munnar2.mp4" controls></video>
+          <div class="video-caption">Eravikulam National Park</div>
+        </div>
+        <div class="video">
+          <video src="videos/munnar3.mp4" controls></video>
+          <div class="video-caption">Mattupetty Dam</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-content">
+      <p>&copy; 2024 Explore India | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
